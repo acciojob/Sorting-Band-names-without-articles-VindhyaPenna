@@ -9,11 +9,16 @@ let x = touristSpots.map((element)=>{
 x.sort();
 
 
-const ul = document.getElementById("band");
+const ul = document.createElement("ul");
+ul.id = "band"
 
-    for (let i = 0; i < touristSpots.length; i++) {
+
+
+    for (let i = 0; i < x.length; i++) {
       const li = document.createElementByTagName("li");
-      li.textContent = touristSpots[i];
+      li.textContent = x[i];
       ul.appendChild(li);
     }
-console.log(x);
+// console.log(x);
+
+document.body.appendChild(ul);

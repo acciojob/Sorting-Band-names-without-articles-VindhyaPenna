@@ -7,4 +7,13 @@ let x = touristSpots.map((element)=>{
 })
 
 x.sort();
-console.log(x);
+
+
+const ul = document.getElementById("band");
+
+    for (let i = 0; i < touristSpots.length; i++) {
+      const li = document.createElementByTagName("li");
+      li.textContent = touristSpots[i];
+      ul.appendChild(li);
+    }
+// console.log(x);

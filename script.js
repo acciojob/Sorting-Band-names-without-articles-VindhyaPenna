@@ -9,16 +9,20 @@ let x = touristSpots.map((element)=>{
 x.sort();
 
 
-const ul = document.createElement("ul");
-ul.id = "band"
+const ul = document.createElement('ul');
+ul.id = 'band'
 
+x.forEach(name=>{
+	constli = document.createElementByTagName('li');
+	li.textContent = name;
+	ul.appendChild(li);
+})
 
-
-    for (let i = 0; i < x.length; i++) {
-      const li = document.createElementByTagName("li");
-      li.textContent = x[i];
-      ul.appendChild(li);
-    }
-// console.log(x);
+//     for (let i = 0; i < x.length; i++) {
+//       const li = document.createElementByTagName('li');
+//       li.textContent = x[i];
+//       ul.appendChild(li);
+//     }
+// // console.log(x);
 
 document.body.appendChild(ul);

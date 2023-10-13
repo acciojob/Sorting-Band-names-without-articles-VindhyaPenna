@@ -16,4 +16,4 @@ const ul = document.getElementById("band");
       li.textContent = touristSpots[i];
       ul.appendChild(li);
     }
-// console.log(x);
+console.log(x);

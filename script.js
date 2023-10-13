@@ -13,7 +13,7 @@ const ul = document.createElement('ul');
 ul.id = 'band'
 
 x.forEach(name=>{
-	constli = document.createElementByTagName('li');
+	const li = document.createElementByTagName('li');
 	li.textContent = name;
 	ul.appendChild(li);
 })

@@ -11,7 +11,7 @@ x.sort();
 const ul = document.createElement('ul');
 ul.id = 'band';
  
-sortedBandNames.forEach(name => {
+x.forEach(name => {
   const li = document.createElement('li');
   li.textContent = name;
   ul.appendChild(li);

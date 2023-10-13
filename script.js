@@ -8,15 +8,14 @@ let x = touristSpots.map((element)=>{
 
 x.sort();
 
-
 const ul = document.createElement('ul');
-ul.id = 'band'
-
-x.forEach(name=>{
-	const li = document.createElementByTagName('li');
-	li.textContent = name;
-	ul.appendChild(li);
-})
+ul.id = 'band';
+ 
+sortedBandNames.forEach(name => {
+  const li = document.createElement('li');
+  li.textContent = name;
+  ul.appendChild(li);
+});
 
 //     for (let i = 0; i < x.length; i++) {
 //       const li = document.createElementByTagName('li');
